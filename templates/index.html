@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html>
+<head>
+  <title>BMW 520d PRICE</title>
+</head>
+	<body>
+		<div class="container" style= "padding-top: 10%; padding-bottom:10%">
+			<center><h1 style="color:white">BMW 520d FİYAT TAHMİN</h1></center>
+			<form action = "" method="POST">
+				<div class="form-group">
+				  <label for="inpKM" style="color:white"> Model Yılı</label>
+				  <input type="number" class="form-control" name="YILLAR">
+				</div>
+				<div class="form-group">
+				  <label for="inpKM" style="color:white">Kilometre</label>
+				  <input type="number" class="form-control" name="KM">
+				</div>
+				<div class="form-group">
+					<label for="inputState" style="color:white">Model</label>
+					<select aria-label="MODELLER" class="form-control">
+					  <option selected>What is your car?</option>
+					  <option>MSport</option>
+					  <option>Premium</option>
+					  <option>Exclusive</option>
+					  <option>Comfort</option>
+					  <option>Standart</option>
+					  <option>Executive M Sport</option>
+					  <option>Executive Plus</option>
+					  <option>Sport Line</option>
+					  <option>Dynamic</option>
+					  <option>Luxury Line</option>
+					  <option>Prestige</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="inputState" style="color:white" class="form-label">Renk</label>
+					<select aria-label="COLORS" class="form-control">
+					  <option selected>What is your color?</option>
+					  <option>Beyaz</option>
+					  <option>Gri</option>
+					  <option>Füme</option>
+					  <option>Siyah</option>
+					  <option>Lacivert</option>
+					  <option>Gümüş Gri</option>
+					</select>
+				</div>
+			  <button type="submit" class="btn btn-primary">YOLLA</button>
+			</form>
+			{% if data != None %}
+			<center> <h1 style="color:white">{{data}} Türk Lirası</h1> </center>
+		    {% endif %}
+		</div>
+		<style>
+			body {
+ 			background: url('../static/wp4296250.jpg') no-repeat center center fixed;
+ 			-webkit-background-size: cover;
+ 			-moz-background-size: cover;
+ 			background-size: cover;
+ 			-o-background-size: cover;
+			}
+		</style>
+	</body>
+</html>
