@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <html>
 <head>
   <title>BMW 520d PRICE</title>
 </head>
 	<body>
 		<div class="container" style= "padding-top: 10%; padding-bottom:10%">
-			<center><h1 style="color:white">BMW 520d FİYAT TAHMİN</h1></center>
+			<center><h1 style="color:white">BMW 520d PRICE PREDICTION</h1></center>
 			<form action = "" method="POST">
 				<div class="form-group">
-				  <label for="inpKM" style="color:white"> Model Yılı</label>
+				  <label for="inpKM" style="color:white"> Model's Year</label>
 				  <input type="number" class="form-control" name="YILLAR">
 				</div>
 				<div class="form-group">
-				  <label for="inpKM" style="color:white">Kilometre</label>
+				  <label for="inpKM" style="color:white">KM</label>
 				  <input type="number" class="form-control" name="KM">
 				</div>
 				<div class="form-group">
@@ -34,21 +35,21 @@
 					</select>
 				</div>
 				<div class="form-group">
-					<label for="inputState" style="color:white" class="form-label">Renk</label>
+					<label for="inputState" style="color:white" class="form-label">Color</label>
 					<select aria-label="COLORS" class="form-control">
 					  <option selected>What is your color?</option>
-					  <option>Beyaz</option>
-					  <option>Gri</option>
-					  <option>Füme</option>
-					  <option>Siyah</option>
-					  <option>Lacivert</option>
-					  <option>Gümüş Gri</option>
+					  <option>White</option>
+					  <option>Grey</option>
+					  <option>Smoked</option>
+					  <option>Black</option>
+					  <option>Dark Blue</option>
+					  <option>Silver Grey</option>
 					</select>
 				</div>
 			  <button type="submit" class="btn btn-primary">YOLLA</button>
 			</form>
 			{% if data != None %}
-			<center> <h1 style="color:white">{{data}} Türk Lirası</h1> </center>
+			<center> <h1 style="color:white">{{data}} TL</h1> </center>
 		    {% endif %}
 		</div>
 		<style>
